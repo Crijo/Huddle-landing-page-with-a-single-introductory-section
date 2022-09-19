@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+
+body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(./images/bg-desktop.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-image: url(./images/bg-mobile.png);
+        background-position: unset;
+        background-size: cover;
+    }
+
+    .main-c {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 90% !important;
+    }
+
+    .left-c {
+        width: 100% !important;
+        margin-bottom: 20px;
+        height: 25vh !important;
+    }
+
+    .right-c {
+        width: 100% !important;
+    }
+
+    .restant {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .pop-up {
+        display: none !important;
+    }
+
+    .gb-r {
+        font-size: 35px;
+    }
+
+    .pop-up::after {
+        display: none !important;
+    }
+
+    .pop-up-m {
+        display: flex !important;
+        width: 40%;
+        background-color: #fff;
+        color: #000;
+        font-weight: bold;
+        position: absolute;
+        border-radius: 10px;
+        height: 6vh;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        left: 115px;
+    }
+
+    .boutons{
+        margin-bottom: 20px;
+    }
+
+    .boutons div {
+        width: 6vh !important;
+        height: 6vh !important;
+    }
+    
+    .icon-l {
+        width: 20px !important;
+        height: 24px !important;
+    }
+    
+    .icon-f {
+        width: 24px !important;
+        height: 22px !important;
+    }
+    
+    .icon-up {
+        width: 26px !important;
+        height: 19px !important;
+    }
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    margin: 0;
+}
+
+.main-c {
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.left-c {
+    background-color: hsl(228, 56%, 26%);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 80px 10px 10px;
+    height: 20vh;
+}
+
+.left-c-content {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.boutons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.boutons div {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon-l {
+    width: 16px;
+    height: 20px;
+}
+
+.icon-f {
+    width: 20px;
+    height: 18px;
+}
+
+.icon-up {
+    width: 22px;
+    height: 15px;
+}
+
+.right-c {
+    width: 70%;
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.right-c-content {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.load-barre {
+    margin-top: 20px;
+    width: 100%;
+    background-color: hsl(229, 57%, 11%);
+    height: 3vh;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.couleur-load {
+    background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 80%;
+    height: 2.5vh;
+    border-radius: 30px;
+    padding: -4px;
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rond {
+    background-color: #fff;
+    height: 22px;
+    width: 22px;
+    border-radius: 30px;
+    margin-right: 2px;
+    padding: -4px;
+}
+
+.taille-gb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.header-right-c {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 3vh;
+}
+
+.restant {
+    width: 60%;
+}
+
+.pop-up {
+    width: 30%;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+    top: -45px;
+    border-radius: 10px;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.pop-up-m {
+    display: none;
+}
+
+.gb-r {
+    font-size: 35px;
+}
+
+.pop-up::after {
+    content: "";
+    border-left: 30px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 30px solid #fff;
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+}
+
+.gb-l{
+    color: hsl(229, 7%, 55%);
+}
